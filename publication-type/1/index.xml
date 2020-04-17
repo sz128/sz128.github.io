@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | Academic</title>
+    <link>https://sz128.github.io/publication-type/1/</link>
+      <atom:link href="https://sz128.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>1</title>
+      <link>https://sz128.github.io/publication-type/1/</link>
+    </image>
+    
+    <item>
+      <title>Efficient Context and Schema Fusion Networks for Multi-Domain Dialogue State Tracking</title>
+      <link>https://sz128.github.io/publication/2020-tranformer-dst/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-tranformer-dst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unsupervised Dual Paraphrasing for Two-stage Semantic Parsing</title>
+      <link>https://sz128.github.io/publication/2020-acl-semantic_parsing/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-acl-semantic_parsing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Augmentation with Atomic Templates for Spoken Language Understanding</title>
+      <link>https://sz128.github.io/publication/2019-emnlp-atomic_template/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2019-emnlp-atomic_template/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CATSLU: The 1st Chinese Audio-Textual Spoken Language Understanding Challenge</title>
+      <link>https://sz128.github.io/publication/2019-icmi-catslu/</link>
+      <pubDate>Thu, 17 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2019-icmi-catslu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semantic Parsing with Dual Learning</title>
+      <link>https://sz128.github.io/publication/2019-acl-dual_semantic_parsing/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2019-acl-dual_semantic_parsing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Hierarchical Decoding Model for Spoken Language Understanding from Unaligned Data</title>
+      <link>https://sz128.github.io/publication/2019-icassp-hdslu/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2019-icassp-hdslu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Concept Transfer Learning for Adaptive Language Understanding</title>
+      <link>https://sz128.github.io/publication/2018-sigdial-adaptivelu/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2018-sigdial-adaptivelu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust Spoken Language Understanding with Unsupervised ASR-error Adaptation</title>
+      <link>https://sz128.github.io/publication/2018-icassp-asr_error_adaptation/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2018-icassp-asr_error_adaptation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust Spoken Language Understanding with Unsupervised ASR-error Adaptation</title>
+      <link>https://sz128.github.io/publication/2018-icassp-semi_supervised_slu/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2018-icassp-semi_supervised_slu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Encoder-decoder with Focus-mechanism for Sequence Labelling Based Spoken Language Understanding</title>
+      <link>https://sz128.github.io/publication/2017-icassp-focus/</link>
+      <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2017-icassp-focus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semantic parser enhancement for dialogue domain extensions with little data</title>
+      <link>https://sz128.github.io/publication/2014-slt-dstc3_slu/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2014-slt-dstc3_slu/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

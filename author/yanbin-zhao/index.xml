@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yanbin Zhao | Academic</title>
+    <link>https://sz128.github.io/author/yanbin-zhao/</link>
+      <atom:link href="https://sz128.github.io/author/yanbin-zhao/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yanbin Zhao</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Yanbin Zhao</title>
+      <link>https://sz128.github.io/author/yanbin-zhao/</link>
+    </image>
+    
+    <item>
+      <title>Unsupervised Dual Paraphrasing for Two-stage Semantic Parsing</title>
+      <link>https://sz128.github.io/publication/2020-acl-semantic_parsing/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-acl-semantic_parsing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

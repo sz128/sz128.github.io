@@ -3,61 +3,192 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sz128.github.io/publication-type/1/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication-type/8/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sz128.github.io/</loc>
-    <lastmod>2020-04-17T16:04:10+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sz128.github.io/publication/my-paper-name/</loc>
-    <lastmod>2020-04-17T16:04:10+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sz128.github.io/publication/</loc>
-    <lastmod>2020-04-17T16:04:10+08:00</lastmod>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sz128.github.io/authors/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sz128.github.io/categories/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sz128.github.io/publication/dual-learning-for-semi-supervised-natural-language-understanding/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
+    <loc>https://sz128.github.io/author/chen-liu/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/chenyu-yang/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2020-tranformer-dst/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/jieyu-li/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sz128.github.io/author/kai-yu/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/lu-chen/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sz128.github.io/category/preprint/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sz128.github.io/author/ruisheng-cao/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sz128.github.io/author/su-zhu/</loc>
-    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sz128.github.io/post/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sz128.github.io/publication_types/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/rao-ma/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/ruisheng-cao/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/su-zhu/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2020-acl-semantic_parsing/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/yanbin-zhao/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2020-dual-learning-for-semi-supervised-natural-language-understanding/</loc>
+    <lastmod>2020-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication-type/2/</loc>
+    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2020-taslp-label_embeddings/</loc>
+    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/zijian-zhao/</loc>
+    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2019-emnlp-atomic_template/</loc>
+    <lastmod>2019-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2019-icmi-catslu/</loc>
+    <lastmod>2019-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/chengqing-zong/</loc>
+    <lastmod>2019-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/tiejun-zhao/</loc>
+    <lastmod>2019-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2019-acl-dual_semantic_parsing/</loc>
+    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2019-icassp-hdslu/</loc>
+    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2018-sigdial-adaptivelu/</loc>
+    <lastmod>2018-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/ouyu-lan/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2018-icassp-asr_error_adaptation/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2018-icassp-semi_supervised_slu/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2017-icassp-focus/</loc>
+    <lastmod>2017-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/da-zheng/</loc>
+    <lastmod>2014-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/author/kai-sun/</loc>
+    <lastmod>2014-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2014-slt-dstc3_slu/</loc>
+    <lastmod>2014-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/post/</loc>
   </url>
   
   <url>

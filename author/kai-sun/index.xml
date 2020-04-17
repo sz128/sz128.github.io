@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kai Sun | Academic</title>
+    <link>https://sz128.github.io/author/kai-sun/</link>
+      <atom:link href="https://sz128.github.io/author/kai-sun/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kai Sun</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 10 Dec 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Kai Sun</title>
+      <link>https://sz128.github.io/author/kai-sun/</link>
+    </image>
+    
+    <item>
+      <title>Semantic parser enhancement for dialogue domain extensions with little data</title>
+      <link>https://sz128.github.io/publication/2014-slt-dstc3_slu/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2014-slt-dstc3_slu/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
