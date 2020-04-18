@@ -1,104 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic</title>
-    <link>https://sz128.github.io/</link>
-      <atom:link href="https://sz128.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Academic</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <title>review | Academic</title>
+    <link>https://sz128.github.io/category/review/</link>
+      <atom:link href="https://sz128.github.io/category/review/index.xml" rel="self" type="application/rss+xml" />
+    <description>review</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 21 Aug 2017 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Academic</title>
-      <link>https://sz128.github.io/</link>
+      <title>review</title>
+      <link>https://sz128.github.io/category/review/</link>
     </image>
-    
-    <item>
-      <title>Efficient Context and Schema Fusion Networks for Multi-Domain Dialogue State Tracking</title>
-      <link>https://sz128.github.io/publication/2020-tranformer-dst/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2020-tranformer-dst/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Unsupervised Dual Paraphrasing for Two-stage Semantic Parsing</title>
-      <link>https://sz128.github.io/publication/2020-acl-semantic_parsing/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2020-acl-semantic_parsing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dual Learning for Semi Supervised Natural Language Understanding</title>
-      <link>https://sz128.github.io/publication/2020-dual-learning-for-semi-supervised-natural-language-understanding/</link>
-      <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2020-dual-learning-for-semi-supervised-natural-language-understanding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Prior Knowledge Driven Label Embedding for Slot Filling in Natural Language Understanding</title>
-      <link>https://sz128.github.io/publication/2020-taslp-label_embeddings/</link>
-      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2020-taslp-label_embeddings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Augmentation with Atomic Templates for Spoken Language Understanding</title>
-      <link>https://sz128.github.io/publication/2019-emnlp-atomic_template/</link>
-      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2019-emnlp-atomic_template/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CATSLU: The 1st Chinese Audio-Textual Spoken Language Understanding Challenge</title>
-      <link>https://sz128.github.io/publication/2019-icmi-catslu/</link>
-      <pubDate>Thu, 17 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2019-icmi-catslu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Semantic Parsing with Dual Learning</title>
-      <link>https://sz128.github.io/publication/2019-acl-dual_semantic_parsing/</link>
-      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2019-acl-dual_semantic_parsing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Hierarchical Decoding Model for Spoken Language Understanding from Unaligned Data</title>
-      <link>https://sz128.github.io/publication/2019-icassp-hdslu/</link>
-      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2019-icassp-hdslu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Concept Transfer Learning for Adaptive Language Understanding</title>
-      <link>https://sz128.github.io/publication/2018-sigdial-adaptivelu/</link>
-      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2018-sigdial-adaptivelu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robust Spoken Language Understanding with Unsupervised ASR-error Adaptation</title>
-      <link>https://sz128.github.io/publication/2018-icassp-asr_error_adaptation/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2018-icassp-asr_error_adaptation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Semi-Supervised Training Using Adversarial Multi-Task Learning for Spoken Language Understanding</title>
-      <link>https://sz128.github.io/publication/2018-icassp-semi_supervised_slu/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2018-icassp-semi_supervised_slu/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>SLU Review Introduction</title>
@@ -688,101 +600,6 @@ $$
     </item>
     
     <item>
-      <title>Encoder-decoder with Focus-mechanism for Sequence Labelling Based Spoken Language Understanding</title>
-      <link>https://sz128.github.io/publication/2017-icassp-focus/</link>
-      <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2017-icassp-focus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Paper Reading 2017 02 10</title>
-      <link>https://sz128.github.io/post/paper-reading-2017-02-10/</link>
-      <pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/post/paper-reading-2017-02-10/</guid>
-      <description>&lt;h1 id=&#34;2017鸡年第一波论文阅读总结及推荐&#34;&gt;2017鸡年第一波论文阅读总结及推荐&lt;/h1&gt;
-&lt;section class=&#34;&#34; style=&#34;margin-top: 1.5em; margin-right: auto; margin-left: auto; padding-top: 0.5em; padding-bottom: 0.5em; border-style: solid none; border-top-width: 1px; border-top-color: rgb(63, 45, 42); font-weight: inherit; text-decoration: inherit; border-bottom-width: 1px; border-bottom-color: rgb(255, 255, 255);&#34;&gt;&lt;section style=&#34;margin-top: -1.8em; border-width: initial; border-style: none; border-color: initial; line-height: 1.4;&#34;&gt;&lt;p class=&#34;&#34; style=&#34;padding: 8px 23px; color: rgb(255, 255, 255); font-weight: inherit; text-align: center; text-decoration: inherit; box-shadow: rgb(104, 104, 202) 2px 2px 10px; display: inline-block; border-color: rgb(137, 18, 68) rgb(241, 60, 136) rgb(85, 18, 46) rgb(211, 36, 109); background-color: rgb(63, 45, 42);&#34;&gt;引&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;
-&lt;p&gt;本次推荐论文如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Structured prediction models for RNN based sequence labeling in clinical text. EMNLP 2016.&lt;/li&gt;
-&lt;li&gt;Sentence rewriting for semantic parsing. ACL 2016.&lt;/li&gt;
-&lt;li&gt;Adversarial training methods for semi-supervised text classification. Under review as a conference paper at ICLR 2017.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;section style=&#34;display: inline-block;&#34;&gt;&lt;p style=&#34;margin-top: 5px; padding: 5px 10px; color: rgb(63, 45, 42); border-bottom: 2px solid rgb(63, 45, 42); text-align: center; overflow: hidden;&#34;&gt;&lt;span style=&#34;color: inherit;&#34;&gt;
-Structured prediction models for RNN based sequence labeling in clinical text
-&lt;/span&gt;&lt;/p&gt;&lt;section class=&#34;&#34; style=&#34;margin-top: 4px; font-family: inherit; font-weight: bolder; border-bottom: 1px dashed rgb(63, 45, 42); border-top-color: rgb(63, 45, 42); border-right-color: rgb(63, 45, 42); border-left-color: rgb(63, 45, 42); overflow: hidden;&#34;&gt;&lt;/section&gt;&lt;section class=&#34;&#34; style=&#34;margin-top: -30px; margin-bottom: 0.5em; margin-left: 30px; width: 25px; color: rgb(63, 45, 42); overflow: hidden; height: 28px; line-height: 26px; border-width: 2.6px; border-style: solid; border-color: rgb(63, 45, 42); border-radius: 20%; float: left; text-align: center; background-color: rgb(244, 244, 244);&#34;&gt;&lt;span class=&#34;&#34; style=&#34;color: inherit;&#34;&gt;1&lt;/span&gt;&lt;/section&gt;&lt;/section&gt;
-&lt;h5 id=&#34;作者&#34;&gt;作者&lt;/h5&gt;
-&lt;p&gt;Abhyuday N Jagannatha, Hong Yu&lt;/p&gt;
-&lt;h5 id=&#34;单位&#34;&gt;单位&lt;/h5&gt;
-&lt;p&gt;University of Massachusetts, MA, USA
-Bedford VAMC and CHOIR, MA, USA&lt;/p&gt;
-&lt;h5 id=&#34;关键词&#34;&gt;关键词&lt;/h5&gt;
-&lt;p&gt;sequence labeling, skip chain CRF, Bi-LSTM&lt;/p&gt;
-&lt;h5 id=&#34;来源&#34;&gt;来源&lt;/h5&gt;
-&lt;p&gt;EMNLP 2016&lt;/p&gt;
-&lt;h5 id=&#34;立题&#34;&gt;立题&lt;/h5&gt;
-&lt;p&gt;解决医用领域的slot filling问题。&lt;/p&gt;
-&lt;h5 id=&#34;模型&#34;&gt;模型&lt;/h5&gt;
-&lt;h6 id=&#34;1bi-lstm-crf&#34;&gt;（1）Bi-LSTM CRF&lt;/h6&gt;
-&lt;p&gt;Bi-LSTM 的输出层套上CRF的criterion，可以参考:[Zhiheng Huang, Wei Xu, and Kai Yu. 2015. Bidirectional lstm-crf models for sequence tagging. arXiv preprint arXiv:1508.01991.]&lt;/p&gt;
-&lt;h6 id=&#34;2bi-lstm-crf-with-pairwise-modeling&#34;&gt;（2）Bi-LSTM CRF with pairwise modeling&lt;/h6&gt;
-&lt;p&gt;因为很多label的连接在训练数据中出现的次数很少，无法被很好地学习到。于是作者把CRF中$$A_{y_t,y_{t+1}}$$的label transition score用一个简单的神经网络模型来预测，这个NN模型的输入是t时刻和t+1时刻的隐层状态。&lt;/p&gt;
-&lt;h6 id=&#34;3bi-lstm-with-approximate-skip-chain-crf&#34;&gt;（3）Bi-LSTM with approximate Skip-chain CRF&lt;/h6&gt;
-&lt;p&gt;&lt;img src=&#34;https://sz128.github.io/img/posts/2017-02-10-1.png&#34; alt=&#34;Alt text&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;简评&#34;&gt;简评&lt;/h5&gt;
-&lt;p&gt;这是一个对Bi-LSTM CRF深入研究的工作。&lt;/p&gt;
-&lt;section style=&#34;display: inline-block;&#34;&gt;&lt;p style=&#34;margin-top: 5px; padding: 5px 10px; color: rgb(63, 45, 42); border-bottom: 2px solid rgb(63, 45, 42); text-align: center; overflow: hidden;&#34;&gt;&lt;span style=&#34;color: inherit;&#34;&gt;
-Sentence rewriting for semantic parsing
-&lt;/span&gt;&lt;/p&gt;&lt;section class=&#34;&#34; style=&#34;margin-top: 4px; font-family: inherit; font-weight: bolder; border-bottom: 1px dashed rgb(63, 45, 42); border-top-color: rgb(63, 45, 42); border-right-color: rgb(63, 45, 42); border-left-color: rgb(63, 45, 42); overflow: hidden;&#34;&gt;&lt;/section&gt;&lt;section class=&#34;&#34; style=&#34;margin-top: -30px; margin-bottom: 0.5em; margin-left: 30px; width: 25px; color: rgb(63, 45, 42); overflow: hidden; height: 28px; line-height: 26px; border-width: 2.6px; border-style: solid; border-color: rgb(63, 45, 42); border-radius: 20%; float: left; text-align: center; background-color: rgb(244, 244, 244);&#34;&gt;&lt;span class=&#34;&#34; style=&#34;color: inherit;&#34;&gt;2&lt;/span&gt;&lt;/section&gt;&lt;/section&gt;
-&lt;h5 id=&#34;作者-1&#34;&gt;作者&lt;/h5&gt;
-&lt;p&gt;Bo Chen, Le Sun, Xianpei Han, Bo An&lt;/p&gt;
-&lt;h5 id=&#34;单位-1&#34;&gt;单位&lt;/h5&gt;
-&lt;p&gt;State Key Laboratory of Computer Sciences
-Institute of Software, Chinese Academy of Sciences, China.&lt;/p&gt;
-&lt;h5 id=&#34;关键词-1&#34;&gt;关键词&lt;/h5&gt;
-&lt;p&gt;Sentence rewriting, semantic parsing&lt;/p&gt;
-&lt;h5 id=&#34;来源-1&#34;&gt;来源&lt;/h5&gt;
-&lt;p&gt;ACL 2016&lt;/p&gt;
-&lt;h5 id=&#34;立题-1&#34;&gt;立题&lt;/h5&gt;
-&lt;p&gt;由于semantic parsing的目标logical form是依赖于ontology的词典的，所以有一些语义相同但是语言表达形式稀少的句子很难被解析正确。为了解决这个问题，该文章提出使用句子转写的方式，把语言表达形式稀少的句子转成意思相同且常见的句子。&lt;/p&gt;
-&lt;h5 id=&#34;模型-1&#34;&gt;模型&lt;/h5&gt;
-&lt;h6 id=&#34;1dictionary-based-rewriting&#34;&gt;（1）Dictionary-based Rewriting&lt;/h6&gt;
-&lt;p&gt;基于字典的名词再解释。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://sz128.github.io/img/posts/2017-02-10-2.png&#34; alt=&#34;Alt text&#34;&gt;&lt;/p&gt;
-&lt;p&gt;做法举例：“For instance, the word “daughter” is explained as “female child” in Wiktionary”&lt;/p&gt;
-&lt;p&gt;使用到资源：Wiktionary&lt;/p&gt;
-&lt;h6 id=&#34;2template-based-rewriting&#34;&gt;（2）Template-based Rewriting&lt;/h6&gt;
-&lt;p&gt;基于句子模板的替换。
-&lt;img src=&#34;https://sz128.github.io/img/posts/2017-02-10-3.png&#34; alt=&#34;Alt text&#34;&gt;
-使用到资源：WikiAnswers&lt;/p&gt;
-&lt;h5 id=&#34;简评-1&#34;&gt;简评&lt;/h5&gt;
-&lt;p&gt;句子重写是一种解决数据稀疏问题的逆向方法。&lt;/p&gt;
-&lt;section style=&#34;display: inline-block;&#34;&gt;&lt;p style=&#34;margin-top: 5px; padding: 5px 10px; color: rgb(63, 45, 42); border-bottom: 2px solid rgb(63, 45, 42); text-align: center; overflow: hidden;&#34;&gt;&lt;span style=&#34;color: inherit;&#34;&gt;
-Adversarial training methods for semi-supervised text classification
-&lt;/span&gt;&lt;/p&gt;&lt;section class=&#34;&#34; style=&#34;margin-top: 4px; font-family: inherit; font-weight: bolder; border-bottom: 1px dashed rgb(63, 45, 42); border-top-color: rgb(63, 45, 42); border-right-color: rgb(63, 45, 42); border-left-color: rgb(63, 45, 42); overflow: hidden;&#34;&gt;&lt;/section&gt;&lt;section class=&#34;&#34; style=&#34;margin-top: -30px; margin-bottom: 0.5em; margin-left: 30px; width: 25px; color: rgb(63, 45, 42); overflow: hidden; height: 28px; line-height: 26px; border-width: 2.6px; border-style: solid; border-color: rgb(63, 45, 42); border-radius: 20%; float: left; text-align: center; background-color: rgb(244, 244, 244);&#34;&gt;&lt;span class=&#34;&#34; style=&#34;color: inherit;&#34;&gt;3&lt;/span&gt;&lt;/section&gt;&lt;/section&gt;
-&lt;h5 id=&#34;作者-2&#34;&gt;作者&lt;/h5&gt;
-&lt;p&gt;Takeru Miyato, Andrew M Dai, Ian Goodfellow&lt;/p&gt;
-&lt;h5 id=&#34;单位-2&#34;&gt;单位&lt;/h5&gt;
-&lt;p&gt;Kyoto University, Google Brain and OpenAI&lt;/p&gt;
-&lt;h5 id=&#34;关键词-2&#34;&gt;关键词&lt;/h5&gt;
-&lt;p&gt;Adversarial training, virtual adversarial training, semi-supervised learning, text classification&lt;/p&gt;
-&lt;h5 id=&#34;来源-2&#34;&gt;来源&lt;/h5&gt;
-&lt;p&gt;ICLR 2017 （under review）&lt;/p&gt;
-&lt;h5 id=&#34;立题-2&#34;&gt;立题&lt;/h5&gt;
-&lt;p&gt;把GAN学习应用到NLP里来。&lt;/p&gt;
-&lt;h5 id=&#34;模型-2&#34;&gt;模型&lt;/h5&gt;
-&lt;p&gt;&lt;img src=&#34;https://sz128.github.io/img/posts/2017-02-10-4.png&#34; alt=&#34;Alt text&#34;&gt;&lt;/p&gt;
-&lt;h6 id=&#34;1adversarial-training&#34;&gt;（1）Adversarial training&lt;/h6&gt;
-&lt;p&gt;有监督学习。&lt;/p&gt;
-&lt;h6 id=&#34;2virtual-adversarial-training&#34;&gt;（2）Virtual adversarial training&lt;/h6&gt;
-&lt;p&gt;无监督学习。&lt;/p&gt;
-&lt;h5 id=&#34;简评-2&#34;&gt;简评&lt;/h5&gt;
-&lt;p&gt;提供了一种regularization的方案。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Survey on Grammar Retrieval</title>
       <link>https://sz128.github.io/post/survey-on-grammar-retrieval/</link>
       <pubDate>Thu, 27 Oct 2016 00:00:00 +0000</pubDate>
@@ -885,68 +702,6 @@ Adversarial training methods for semi-supervised text classification
 &lt;li&gt;Semantic Parsing using Distributional Semantics and Probabilistic Logic.  The ACL 2014 Workshop on Semantic Parsing.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Paper Summary Seq2tree</title>
-      <link>https://sz128.github.io/post/paper-summary-seq2tree/</link>
-      <pubDate>Fri, 14 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/post/paper-summary-seq2tree/</guid>
-      <description>&lt;h1 id=&#34;language-to-logic-form-with-neural-attention&#34;&gt;Language to Logic Form with Neural Attention&lt;/h1&gt;
-&lt;h2 id=&#34;作者&#34;&gt;作者&lt;/h2&gt;
-&lt;p&gt;Li Dong, Mirella Lapata &lt;br&gt;
-&lt;a href=&#34;mailto:li.dong@ed.ac.uk&#34;&gt;li.dong@ed.ac.uk&lt;/a&gt;, &lt;a href=&#34;mailto:mlap@inf.ed.ac.uk&#34;&gt;mlap@inf.ed.ac.uk&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;单位&#34;&gt;单位&lt;/h2&gt;
-&lt;p&gt;Institute for Language, Cognition and Computation &lt;br&gt;
-School of Informatics, University of Edinburgh &lt;br&gt;
-10 Crichton Street, Edinburgh EH8 9AB&lt;/p&gt;
-&lt;h2 id=&#34;关键词&#34;&gt;关键词&lt;/h2&gt;
-&lt;p&gt;sequence-to-sequence, sequence-to-tree, semantic parsing&lt;/p&gt;
-&lt;h2 id=&#34;来源&#34;&gt;来源&lt;/h2&gt;
-&lt;p&gt;ACL 2016&lt;/p&gt;
-&lt;h2 id=&#34;立题&#34;&gt;立题&lt;/h2&gt;
-&lt;p&gt;该文涉及的任务是semantic parsing，其目标是将一句话解析为正式的意图表示（比如一个逻辑表达式或者结构化的query）。作者首次将seq2seq引入该任务，并在普通seq2seq的decoder无法考虑逻辑表达式的层次结构的问题上，创造性地提出了层次树decoder。&lt;/p&gt;
-&lt;h2 id=&#34;模型&#34;&gt;模型&lt;/h2&gt;
-&lt;h3 id=&#34;1-模型概略&#34;&gt;1. 模型概略&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://sz128.github.io/img/posts/2016-09-26-pic1.png&#34; alt=&#34;Alt text&#34;&gt;
-该文要做的事情是把自然语言序列\(q = x_1 \dots x_{|q|}\)映射成逻辑表达式\(a = y_1 \dots y_{|a|}\)。则条件概率\(p(a|q)\)可以分解为：
-\(p(a|q)=\prod_{t=1}^{|a|} p(y_t|y_{&amp;lt;t},q)\)&lt;/p&gt;
-&lt;p&gt;其中\(y_{&amp;lt;t}=y_1 \dots y_{t-1}\)。&lt;/p&gt;
-&lt;h3 id=&#34;2-seq2seq模型&#34;&gt;2. seq2seq模型&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://sz128.github.io/img/posts/2016-09-26-pic2.png&#34; alt=&#34;Alt text&#34;&gt;&lt;/p&gt;
-&lt;p&gt;seq2seq模型，深色（左边）的为encoder，浅色（右边）的为decoder。&lt;/p&gt;
-&lt;h3 id=&#34;3-seq2tree模型&#34;&gt;3. seq2tree模型&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://sz128.github.io/img/posts/2016-09-26-pic3.png&#34; alt=&#34;Alt text&#34;&gt;&lt;/p&gt;
-&lt;p&gt;seq2tree的根本改变就是把decoder从一个单纯的序列RNN变成了考虑逻辑表达层次结构的复杂RNN模型。改进的地方就是在decoder的输出词表中加了一个“非叶子结点”&amp;lt;n&amp;gt;，用来表示该处还有子树。比如，上图中的预测逻辑表达式是“lambda $0 e (and (&amp;gt;(departure
-time $0) 1600:ti) (from $0 dallas:ci))”，每一层圆括号里包着的内容就是一棵子树。所以改进后的层次树decoder，通过先预测第一层，再在第一层的“非叶子结点”的基础上预测下一层，以此类推直到没有“非叶子结点”。整体的解码过程就像一个广度优先搜索一样进行着。&lt;/p&gt;
-&lt;h3 id=&#34;4-attention&#34;&gt;4. attention&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://sz128.github.io/img/posts/2016-09-26-pic4.png&#34; alt=&#34;Alt text&#34;&gt;&lt;/p&gt;
-&lt;p&gt;该文的attention计算方法和常见方法有点不一样，它使用decoder中当前hidden state和encoder中所有hidden state计算attention weight。
-$$s_k^t = \frac{ exp(\textbf{h}^L_k \cdot \textbf{h}^L_t) }{ \sum_{j=1}^{|q|}exp(\textbf{h}^L_j \cdot \textbf{h}^L_t) }$$
-其中\(\textbf{h}^L_t\)表示当前decoder的隐层状态，\(\textbf{h}^L_k\)表示的是encoder的隐层状态。&lt;/p&gt;
-&lt;p&gt;根据attention weight计算的context vector为
-$$\textbf{c}^t = \sum_{k=1}^{|q|}s_k^t\textbf{h}^L_k$$&lt;/p&gt;
-&lt;p&gt;decoder层的计算：
-$$\textbf{h}^{att}_t = tanh(\textbf{W}_1 \textbf{h}^L_t + \textbf{W}_2\textbf{c}^t)$$
-, \(p(y_t|y_{&amp;lt;t},q)=softmax(\textbf{W}_o\textbf{h}^{att}_t)^T\textbf{e}(y_t)\)
-其中\(\textbf{e}(y_t)\)表示一个one-hot向量，用于获取\(y_t\)的概率。&lt;/p&gt;
-&lt;h2 id=&#34;资源&#34;&gt;资源&lt;/h2&gt;
-&lt;p&gt;其实验相关的代码：
-&lt;a href=&#34;https://github.com/donglixp/lang2logic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/donglixp/lang2logic&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;相关工作&#34;&gt;相关工作&lt;/h2&gt;
-&lt;p&gt;semantic parsing的前人工作往往依赖于高质量的词典、人工构造的模板和领域特有的特征等。&lt;/p&gt;
-&lt;h2 id=&#34;简评&#34;&gt;简评&lt;/h2&gt;
-&lt;p&gt;seq2seq解决sentence to tree的问题已经不是新鲜事物了，比如
-&lt;a href=&#34;https://arxiv.org/pdf/1412.7449.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vinyals&lt;/a&gt;做的句法分析的工作，但该文在seq-to-tree模型上的创新让人耳目一新。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Semantic parser enhancement for dialogue domain extensions with little data</title>
-      <link>https://sz128.github.io/publication/2014-slt-dstc3_slu/</link>
-      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2014-slt-dstc3_slu/</guid>
-      <description></description>
     </item>
     
   </channel>

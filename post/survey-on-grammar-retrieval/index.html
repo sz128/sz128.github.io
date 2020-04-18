@@ -1,0 +1,1037 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Su Zhu">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Table of Contents  前言 论文调研  调研方向 调研方式 文章汇总     前言 在任务型的口语对话系统框架下，目前主流的口语语义理解方法主要分为基于规则、统计学习的方法。在建立一个口语语义解析器之初，领域专家或者开发者往往需要人为定义语义框架、语义槽以及符合对话场景的所有可能的槽值。基于规则的方法，则继续需要领域专家或者开发人员人为地编写、维护规则文法。基于统计学习的方法则需要数据标注人员标注大量的数据，用于有监督学习。所以现在主流的口语语义解析器的构建过程可以描述为如下几个步骤：
+  定义指定领域的语义表示方式 编写规则/(收集数据&#43;人工标注) 生成模型 校验   然而其中有几大问题，使得任务型的口语义理解无法快速地构建或者领域迁移。
+第一个问题是“语义表示方式的定义”。目前绝大多数的方法都使用意图&#43;槽值对的方式来表示一句话的语义。这样简单的设计对于单个领域或者应用是非常高效的，然而对于领域扩展、迁移却并不友好。比如天气领域中有语义槽“city”，机票领域中有语义槽“Fromcity”和“Tocity”，这三个语义槽在这种扁平化的设计里是属于同一层次的，然而这并不符合人类语言现象。是否改为“city”、“from.city”、“to.city”会好一点呢？那么有层次的语义槽设计具体应该是怎样的呢？
+第二个问题是“规则编写”和“数据标注”。数据收集和数据标注是非常耗费人力和财力的，而相比之下规则编写要轻松一些。然而目前人工编写规则有如下主要缺点：第一，人力消耗大；第二，难维护；第三，难移植到新领域。所以我们是否可以自动生成规则？是否可以提升规则系统的易维护性？是否可以实现规则的跨领域移植？
+那为什么我们选择基于规则检索的方法做口语义理解？原因之一是基于规则方法的可控性要高于数据驱动的基于统计学习的方法（加入一条新规则比加入一类新数据且重训模型要可控）；更重要的是语义规则是一种高层知识的体现，是很难直接从有限的数据中学习到。为此，我们希望从从基于规则的方法出发，力图解决上述几个问题，实现“开放式、可扩展”的口语语义理解。
+论文调研 调研方向  规则生成 规则检索 语义表示 语义项自动导出 规则与统计方法相结合  调研方式 已知的语义库  FrameNet/PropBank/AMR Freebase  google搜索 关键词">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://sz128.github.io/post/survey-on-grammar-retrieval/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://sz128.github.io/post/survey-on-grammar-retrieval/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Academic">
+  <meta property="og:url" content="https://sz128.github.io/post/survey-on-grammar-retrieval/">
+  <meta property="og:title" content="Survey on Grammar Retrieval | Academic">
+  <meta property="og:description" content="Table of Contents  前言 论文调研  调研方向 调研方式 文章汇总     前言 在任务型的口语对话系统框架下，目前主流的口语语义理解方法主要分为基于规则、统计学习的方法。在建立一个口语语义解析器之初，领域专家或者开发者往往需要人为定义语义框架、语义槽以及符合对话场景的所有可能的槽值。基于规则的方法，则继续需要领域专家或者开发人员人为地编写、维护规则文法。基于统计学习的方法则需要数据标注人员标注大量的数据，用于有监督学习。所以现在主流的口语语义解析器的构建过程可以描述为如下几个步骤：
+  定义指定领域的语义表示方式 编写规则/(收集数据&#43;人工标注) 生成模型 校验   然而其中有几大问题，使得任务型的口语义理解无法快速地构建或者领域迁移。
+第一个问题是“语义表示方式的定义”。目前绝大多数的方法都使用意图&#43;槽值对的方式来表示一句话的语义。这样简单的设计对于单个领域或者应用是非常高效的，然而对于领域扩展、迁移却并不友好。比如天气领域中有语义槽“city”，机票领域中有语义槽“Fromcity”和“Tocity”，这三个语义槽在这种扁平化的设计里是属于同一层次的，然而这并不符合人类语言现象。是否改为“city”、“from.city”、“to.city”会好一点呢？那么有层次的语义槽设计具体应该是怎样的呢？
+第二个问题是“规则编写”和“数据标注”。数据收集和数据标注是非常耗费人力和财力的，而相比之下规则编写要轻松一些。然而目前人工编写规则有如下主要缺点：第一，人力消耗大；第二，难维护；第三，难移植到新领域。所以我们是否可以自动生成规则？是否可以提升规则系统的易维护性？是否可以实现规则的跨领域移植？
+那为什么我们选择基于规则检索的方法做口语义理解？原因之一是基于规则方法的可控性要高于数据驱动的基于统计学习的方法（加入一条新规则比加入一类新数据且重训模型要可控）；更重要的是语义规则是一种高层知识的体现，是很难直接从有限的数据中学习到。为此，我们希望从从基于规则的方法出发，力图解决上述几个问题，实现“开放式、可扩展”的口语语义理解。
+论文调研 调研方向  规则生成 规则检索 语义表示 语义项自动导出 规则与统计方法相结合  调研方式 已知的语义库  FrameNet/PropBank/AMR Freebase  google搜索 关键词"><meta property="og:image" content="https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2016-10-27T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2016-10-27T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sz128.github.io/post/survey-on-grammar-retrieval/"
+  },
+  "headline": "Survey on Grammar Retrieval",
+  
+  "datePublished": "2016-10-27T00:00:00Z",
+  "dateModified": "2016-10-27T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Su Zhu"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Academic",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Table of Contents  前言 论文调研  调研方向 调研方式 文章汇总     前言 在任务型的口语对话系统框架下，目前主流的口语语义理解方法主要分为基于规则、统计学习的方法。在建立一个口语语义解析器之初，领域专家或者开发者往往需要人为定义语义框架、语义槽以及符合对话场景的所有可能的槽值。基于规则的方法，则继续需要领域专家或者开发人员人为地编写、维护规则文法。基于统计学习的方法则需要数据标注人员标注大量的数据，用于有监督学习。所以现在主流的口语语义解析器的构建过程可以描述为如下几个步骤：\n  定义指定领域的语义表示方式 编写规则/(收集数据+人工标注) 生成模型 校验   然而其中有几大问题，使得任务型的口语义理解无法快速地构建或者领域迁移。\n第一个问题是“语义表示方式的定义”。目前绝大多数的方法都使用意图+槽值对的方式来表示一句话的语义。这样简单的设计对于单个领域或者应用是非常高效的，然而对于领域扩展、迁移却并不友好。比如天气领域中有语义槽“city”，机票领域中有语义槽“Fromcity”和“Tocity”，这三个语义槽在这种扁平化的设计里是属于同一层次的，然而这并不符合人类语言现象。是否改为“city”、“from.city”、“to.city”会好一点呢？那么有层次的语义槽设计具体应该是怎样的呢？\n第二个问题是“规则编写”和“数据标注”。数据收集和数据标注是非常耗费人力和财力的，而相比之下规则编写要轻松一些。然而目前人工编写规则有如下主要缺点：第一，人力消耗大；第二，难维护；第三，难移植到新领域。所以我们是否可以自动生成规则？是否可以提升规则系统的易维护性？是否可以实现规则的跨领域移植？\n那为什么我们选择基于规则检索的方法做口语义理解？原因之一是基于规则方法的可控性要高于数据驱动的基于统计学习的方法（加入一条新规则比加入一类新数据且重训模型要可控）；更重要的是语义规则是一种高层知识的体现，是很难直接从有限的数据中学习到。为此，我们希望从从基于规则的方法出发，力图解决上述几个问题，实现“开放式、可扩展”的口语语义理解。\n论文调研 调研方向  规则生成 规则检索 语义表示 语义项自动导出 规则与统计方法相结合  调研方式 已知的语义库  FrameNet/PropBank/AMR Freebase  google搜索 关键词"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Survey on Grammar Retrieval | Academic</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Academic</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Academic</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/post"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Survey on Grammar Retrieval</h1>
+
+  
+  <p class="page-subtitle">论文调研：基于“规则、槽值”检索的口语语义理解</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span><a href="/author/su-zhu/">Su Zhu</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 27, 2016
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/review/">review</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#论文调研">论文调研</a>
+      <ul>
+        <li><a href="#调研方向">调研方向</a></li>
+        <li><a href="#调研方式">调研方式</a></li>
+        <li><a href="#文章汇总">文章汇总</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<h2 id="前言">前言</h2>
+<p>在任务型的口语对话系统框架下，目前主流的口语语义理解方法主要分为基于规则、统计学习的方法。在建立一个口语语义解析器之初，领域专家或者开发者往往需要人为定义语义框架、语义槽以及符合对话场景的所有可能的槽值。基于规则的方法，则继续需要领域专家或者开发人员人为地编写、维护规则文法。基于统计学习的方法则需要数据标注人员标注大量的数据，用于有监督学习。所以现在主流的口语语义解析器的构建过程可以描述为如下几个步骤：</p>
+<blockquote>
+<ol>
+<li>定义指定领域的语义表示方式</li>
+<li>编写规则/(收集数据+人工标注)</li>
+<li>生成模型</li>
+<li>校验</li>
+</ol>
+</blockquote>
+<p>然而其中有几大问题，使得任务型的口语义理解无法快速地构建或者领域迁移。</p>
+<p>第一个问题是“语义表示方式的定义”。目前绝大多数的方法都使用意图+槽值对的方式来表示一句话的语义。这样简单的设计对于单个领域或者应用是非常高效的，然而对于领域扩展、迁移却并不友好。比如天气领域中有语义槽“city”，机票领域中有语义槽“Fromcity”和“Tocity”，这三个语义槽在这种扁平化的设计里是属于同一层次的，然而这并不符合人类语言现象。是否改为“city”、“from.city”、“to.city”会好一点呢？那么有层次的语义槽设计具体应该是怎样的呢？</p>
+<p>第二个问题是“规则编写”和“数据标注”。数据收集和数据标注是非常耗费人力和财力的，而相比之下规则编写要轻松一些。然而目前人工编写规则有如下主要缺点：第一，人力消耗大；第二，难维护；第三，难移植到新领域。所以我们是否可以自动生成规则？是否可以提升规则系统的易维护性？是否可以实现规则的跨领域移植？</p>
+<p>那为什么我们选择基于规则检索的方法做口语义理解？原因之一是基于规则方法的可控性要高于数据驱动的基于统计学习的方法（加入一条新规则比加入一类新数据且重训模型要可控）；更重要的是语义规则是一种高层知识的体现，是很难直接从有限的数据中学习到。为此，我们希望从从基于规则的方法出发，力图解决上述几个问题，实现“开放式、可扩展”的口语语义理解。</p>
+<h2 id="论文调研">论文调研</h2>
+<h3 id="调研方向">调研方向</h3>
+<ul>
+<li>规则生成</li>
+<li>规则检索</li>
+<li>语义表示</li>
+<li>语义项自动导出</li>
+<li>规则与统计方法相结合</li>
+</ul>
+<h3 id="调研方式">调研方式</h3>
+<h4 id="已知的语义库">已知的语义库</h4>
+<ul>
+<li>FrameNet/PropBank/AMR</li>
+<li>Freebase</li>
+</ul>
+<h4 id="google搜索">google搜索</h4>
+<p>关键词</p>
+<ul>
+<li>grammar/rule/template retrieval [+semantic]</li>
+<li>semantic representation</li>
+</ul>
+<h4 id="会议期刊论文集">会议期刊论文集</h4>
+<p>近三年相关论文，搜索关键词为:retrieval/rule/grammar/slot/semantic_representation</p>
+<ul>
+<li>Interspeech/ICASSP/ASRU/SLT/Sigdial</li>
+<li>ACL/EMNLP/COLING/NAACL</li>
+<li>TASLP</li>
+<li>AAAI/NIPS</li>
+</ul>
+<h3 id="文章汇总">文章汇总</h3>
+<h4 id="规则生成">规则生成</h4>
+<ul>
+<li>SemEval-2014 Task 2: Grammar Induction for Spoken Dialogue Systems. SemEval 2014.</li>
+<li>SAIL-GRS: Grammar Induction for Spoken Dialogue Systems using CF-IRF Rule Similarity. SemEval 2014.</li>
+<li>tucSage: Grammar Rule Induction for Spoken Dialogue Systems via Probabilistic Candidate Selection. SemEval 2014.</li>
+<li>Web Data Harvesting for Speech Understanding Grammar Induction. Interspeech 2013.</li>
+<li>Using Lexical, Syntactic And Semantic Features For Non-terminal Grammar Rule Induction In Spoken Dialogue Systems. SLT 2014.</li>
+<li>Fusion Of Knowledge-based And Data-driven Approaches To Grammar Induction. Interspeech 2014.</li>
+<li>Semi-automatic Acquisition Of Domain-specific Semantic Structures. EuroSpeech 1999.</li>
+<li>Semiautomatic acquisition of semantic structures for understanding domain-specific natural language queries. IEEE TRANSACTIONS ON KNOWLEDGE AND DATA ENGINEERING, 2002.</li>
+</ul>
+<h4 id="规则检索">规则检索</h4>
+<ul>
+<li>Information Retrieval Techniques in Rule-based Expert Systems. CDAKO 1991.</li>
+<li>A Continuous Space Rule Selection Model for Syntax-based Statistical Machine Translation. ACL 2016.</li>
+<li>Rule Selection with Soft Syntactic Features for String-to-Tree Statistical Machine Translation. EMNLP 2015.</li>
+</ul>
+<h4 id="语义表示">语义表示</h4>
+<ul>
+<li>Spoken language understanding. IEEE Signal Processing Magazine 2005.</li>
+<li>Spoken Language Understanding-Interpreting the signs given by a speech signal. IEEE Signal Processing Magazine 2008.</li>
+<li>A SURVEY ON ONTOLOGY CONSTRUCTION METHODOLOGIES. ECBS 2011.</li>
+<li>Semantic Representation.</li>
+<li>De-Conflated Semantic Representations.</li>
+<li>A Domain-independent Rule-based Framework for Event Extraction.</li>
+<li>Generating Natural Language Descriptions for Semantic Representations of Human Brain Activity.</li>
+<li>Machine Comprehension using Rich Semantic Representations.</li>
+</ul>
+<h4 id="语义项自动导出">语义项自动导出</h4>
+<ul>
+<li>Unsupervised Induction And Filling Of Semantic Slots For Spoken Dialogue Systems Using Frame-semantic Parsing. ASRU 2013.</li>
+<li>Leveraging Frame Semantics And Distributional Semantics For Unsupervised Semantic Slot Induction In Spoken Dialogue Systems. SLT 2014.</li>
+<li>Dynamically Supporting Unexplored Domains In Conversational Interactions By Enriching Semantics With Neural Word Embeddings. SLT 2014.</li>
+<li>Matrix Factorization with Knowledge Graph Propagation for Unsupervised Spoken Language Understanding. ACL 2015.</li>
+</ul>
+<h4 id="统计规则">统计+规则</h4>
+<ul>
+<li>Harnessing Deep Neural Networks with Logic Rules. ACL 2016.</li>
+<li>Semantic Parsing using Distributional Semantics and Probabilistic Logic.  The ACL 2014 Workshop on Semantic Parsing.</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://sz128.github.io/post/survey-on-grammar-retrieval/&amp;text=Survey%20on%20Grammar%20Retrieval" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://sz128.github.io/post/survey-on-grammar-retrieval/&amp;t=Survey%20on%20Grammar%20Retrieval" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Survey%20on%20Grammar%20Retrieval&amp;body=https://sz128.github.io/post/survey-on-grammar-retrieval/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://sz128.github.io/post/survey-on-grammar-retrieval/&amp;title=Survey%20on%20Grammar%20Retrieval" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Survey%20on%20Grammar%20Retrieval%20https://sz128.github.io/post/survey-on-grammar-retrieval/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://sz128.github.io/post/survey-on-grammar-retrieval/&amp;title=Survey%20on%20Grammar%20Retrieval" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

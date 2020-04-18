@@ -30,7 +30,7 @@
   <meta name="description" content="PhD student in Computer Science and Technology">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://sz128.github.io/categories/">
+  <link rel="alternate" hreflang="en-us" href="https://sz128.github.io/category/review/">
 
   
 
@@ -215,14 +215,14 @@
   
 
   
-  <link rel="alternate" href="/categories/index.xml" type="application/rss+xml" title="Academic">
+  <link rel="alternate" href="/category/review/index.xml" type="application/rss+xml" title="Academic">
   
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://sz128.github.io/categories/">
+  <link rel="canonical" href="https://sz128.github.io/category/review/">
 
   
   
@@ -238,12 +238,12 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Academic">
-  <meta property="og:url" content="https://sz128.github.io/categories/">
-  <meta property="og:title" content="Categories | Academic">
+  <meta property="og:url" content="https://sz128.github.io/category/review/">
+  <meta property="og:title" content="review | Academic">
   <meta property="og:description" content="PhD student in Computer Science and Technology"><meta property="og:image" content="https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-04-10T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2017-08-21T00:00:00&#43;00:00">
   
 
   
@@ -260,7 +260,7 @@
 
 
 
-  <title>Categories | Academic</title>
+  <title>review | Academic</title>
 
 </head>
 
@@ -499,7 +499,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1>Categories</h1>
+  <h1>review</h1>
 
   
 
@@ -517,8 +517,10 @@
     
     
     <div>
-      <h2><a href="/category/preprint/" >preprint</a></h2>
+      <h2><a href="/post/slu-review-introduction/" >SLU Review Introduction</a></h2>
       <div class="article-style">
+        
+          Table of Contents    口语理解基本概念  语义表达  语义框架 对话动作  本体 口语理解的不确定性问题  口语理解算法前沿  规则口语理解方法 统计方法  对齐与非对齐数据 对齐数据与传统统计模型 非对齐数据与传统统计模型  深度学习方法  口语理解中的不确定性建模 上下文建模及领域自适应  基于对话上下文的口语理解 口语理解中的领域自适应与扩展  多领域的领域自适应 领域扩展   尚未解决的问题  语义表示的设计 语义解析和语音识别的联合优化 口语理解的领域迁移技术  参考文献：
         
       </div>
     </div>
@@ -527,18 +529,15 @@
     
     
     <div>
-      <h2><a href="/category/review/" >review</a></h2>
+      <h2><a href="/post/survey-on-grammar-retrieval/" >Survey on Grammar Retrieval</a></h2>
       <div class="article-style">
         
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/category/paper_review/" >paper_review</a></h2>
-      <div class="article-style">
+          Table of Contents  前言 论文调研  调研方向 调研方式 文章汇总     前言 在任务型的口语对话系统框架下，目前主流的口语语义理解方法主要分为基于规则、统计学习的方法。在建立一个口语语义解析器之初，领域专家或者开发者往往需要人为定义语义框架、语义槽以及符合对话场景的所有可能的槽值。基于规则的方法，则继续需要领域专家或者开发人员人为地编写、维护规则文法。基于统计学习的方法则需要数据标注人员标注大量的数据，用于有监督学习。所以现在主流的口语语义解析器的构建过程可以描述为如下几个步骤：
+  定义指定领域的语义表示方式 编写规则/(收集数据+人工标注) 生成模型 校验   然而其中有几大问题，使得任务型的口语义理解无法快速地构建或者领域迁移。
+第一个问题是“语义表示方式的定义”。目前绝大多数的方法都使用意图+槽值对的方式来表示一句话的语义。这样简单的设计对于单个领域或者应用是非常高效的，然而对于领域扩展、迁移却并不友好。比如天气领域中有语义槽“city”，机票领域中有语义槽“Fromcity”和“Tocity”，这三个语义槽在这种扁平化的设计里是属于同一层次的，然而这并不符合人类语言现象。是否改为“city”、“from.city”、“to.city”会好一点呢？那么有层次的语义槽设计具体应该是怎样的呢？
+第二个问题是“规则编写”和“数据标注”。数据收集和数据标注是非常耗费人力和财力的，而相比之下规则编写要轻松一些。然而目前人工编写规则有如下主要缺点：第一，人力消耗大；第二，难维护；第三，难移植到新领域。所以我们是否可以自动生成规则？是否可以提升规则系统的易维护性？是否可以实现规则的跨领域移植？
+那为什么我们选择基于规则检索的方法做口语义理解？原因之一是基于规则方法的可控性要高于数据驱动的基于统计学习的方法（加入一条新规则比加入一类新数据且重训模型要可控）；更重要的是语义规则是一种高层知识的体现，是很难直接从有限的数据中学习到。为此，我们希望从从基于规则的方法出发，力图解决上述几个问题，实现“开放式、可扩展”的口语语义理解。
+论文调研 调研方向  规则生成 规则检索 语义表示 语义项自动导出 规则与统计方法相结合  调研方式 已知的语义库  FrameNet/PropBank/AMR Freebase  google搜索 关键词
         
       </div>
     </div>
