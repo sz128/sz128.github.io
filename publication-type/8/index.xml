@@ -5,12 +5,20 @@
     <link>https://sz128.github.io/publication-type/8/</link>
       <atom:link href="https://sz128.github.io/publication-type/8/index.xml" rel="self" type="application/rss+xml" />
     <description>8</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>8</title>
       <link>https://sz128.github.io/publication-type/8/</link>
     </image>
+    
+    <item>
+      <title>A Hierarchical Tracker For Multi-domain Dialogue State Tracking</title>
+      <link>https://sz128.github.io/publication/2020-icassp-hd_dst/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-icassp-hd_dst/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Unsupervised Dual Paraphrasing for Two-stage Semantic Parsing</title>
@@ -61,6 +69,14 @@
     </item>
     
     <item>
+      <title>Joint Spoken Language Understanding and Domain Adaptive Language Modeling</title>
+      <link>https://sz128.github.io/publication/2018-iscide-joint_slu_lm/</link>
+      <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2018-iscide-joint_slu_lm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Concept Transfer Learning for Adaptive Language Understanding</title>
       <link>https://sz128.github.io/publication/2018-sigdial-adaptivelu/</link>
       <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
@@ -89,6 +105,30 @@
       <link>https://sz128.github.io/publication/2017-icassp-focus/</link>
       <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
       <guid>https://sz128.github.io/publication/2017-icassp-focus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rich Punctuations Prediction Using Large-scale Deep Learning</title>
+      <link>https://sz128.github.io/publication/2016-iscslp-wu_xueyang/</link>
+      <pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2016-iscslp-wu_xueyang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hybrid Dialogue State Tracking for Real World Human-to-Human Dialogues</title>
+      <link>https://sz128.github.io/publication/2016-is-dstc4/</link>
+      <pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2016-is-dstc4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The SJTU System for Dialog State Tracking Challenge 2</title>
+      <link>https://sz128.github.io/publication/2014-sigdial-sun_kai/</link>
+      <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2014-sigdial-sun_kai/</guid>
       <description></description>
     </item>
     

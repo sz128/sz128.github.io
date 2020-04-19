@@ -4,17 +4,32 @@
   
   <url>
     <loc>https://sz128.github.io/publication-type/1/</loc>
-    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sz128.github.io/publication-type/8/</loc>
-    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2020-icassp-hd_dst/</loc>
+    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sz128.github.io/</loc>
-    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication_types/</loc>
+    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/</loc>
+    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -28,17 +43,17 @@
   </url>
   
   <url>
+    <loc>https://sz128.github.io/publication/2020-acl-zhao_yanbin/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2020-acl-chen_lu/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sz128.github.io/category/preprint/</loc>
-    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sz128.github.io/publication_types/</loc>
-    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sz128.github.io/publication/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -63,12 +78,22 @@
   </url>
   
   <url>
+    <loc>https://sz128.github.io/publication/2020-aaai-chen_lu/</loc>
+    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sz128.github.io/publication/2019-emnlp-atomic_template/</loc>
     <lastmod>2019-11-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://sz128.github.io/publication/2019-icmi-catslu/</loc>
+    <lastmod>2019-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2019-icmi-robust_slu/</loc>
     <lastmod>2019-10-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -80,6 +105,11 @@
   <url>
     <loc>https://sz128.github.io/publication/2019-icassp-hdslu/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2018-iscide-joint_slu_lm/</loc>
+    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -143,6 +173,11 @@
   </url>
   
   <url>
+    <loc>https://sz128.github.io/publication/2016-iscslp-wu_xueyang/</loc>
+    <lastmod>2016-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sz128.github.io/post/paper-summary-seq2tree/</loc>
     <lastmod>2016-10-14T00:00:00+00:00</lastmod>
   </url>
@@ -153,8 +188,43 @@
   </url>
   
   <url>
+    <loc>https://sz128.github.io/publication/2016-is-dstc4/</loc>
+    <lastmod>2016-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2016-fcs-yu_kai/</loc>
+    <lastmod>2015-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2015-sigdial-xie_qizhe/</loc>
+    <lastmod>2015-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2015-taslp-yu_kai/</loc>
+    <lastmod>2015-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2014-sigdial-sun_kai/</loc>
+    <lastmod>2015-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2014-slt-sun_kai/</loc>
+    <lastmod>2014-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sz128.github.io/publication/2014-slt-dstc3_slu/</loc>
     <lastmod>2014-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sz128.github.io/publication/2014-cjc-yu_kai/</loc>
+    <lastmod>2014-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>

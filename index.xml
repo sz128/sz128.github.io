@@ -5,7 +5,7 @@
     <link>https://sz128.github.io/</link>
       <atom:link href="https://sz128.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Academic</title>
@@ -13,10 +13,34 @@
     </image>
     
     <item>
+      <title>A Hierarchical Tracker For Multi-domain Dialogue State Tracking</title>
+      <link>https://sz128.github.io/publication/2020-icassp-hd_dst/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-icassp-hd_dst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Efficient Context and Schema Fusion Networks for Multi-Domain Dialogue State Tracking</title>
       <link>https://sz128.github.io/publication/2020-tranformer-dst/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://sz128.github.io/publication/2020-tranformer-dst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Line Graph Enhanced AMR-to-Text Generation with Mix-Order Graph Attention Networks</title>
+      <link>https://sz128.github.io/publication/2020-acl-zhao_yanbin/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-acl-zhao_yanbin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural Graph Matching Networks for Chinese Short Text Matching</title>
+      <link>https://sz128.github.io/publication/2020-acl-chen_lu/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-acl-chen_lu/</guid>
       <description></description>
     </item>
     
@@ -45,6 +69,14 @@
     </item>
     
     <item>
+      <title>Schema-Guided Multi-Domain Dialogue State Tracking with Graph Attention Neural Networks</title>
+      <link>https://sz128.github.io/publication/2020-aaai-chen_lu/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-aaai-chen_lu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data Augmentation with Atomic Templates for Spoken Language Understanding</title>
       <link>https://sz128.github.io/publication/2019-emnlp-atomic_template/</link>
       <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
@@ -61,6 +93,14 @@
     </item>
     
     <item>
+      <title>Robust Spoken Language Understanding with Acoustic and Domain Knowledge</title>
+      <link>https://sz128.github.io/publication/2019-icmi-robust_slu/</link>
+      <pubDate>Thu, 17 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2019-icmi-robust_slu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Semantic Parsing with Dual Learning</title>
       <link>https://sz128.github.io/publication/2019-acl-dual_semantic_parsing/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
@@ -73,6 +113,14 @@
       <link>https://sz128.github.io/publication/2019-icassp-hdslu/</link>
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       <guid>https://sz128.github.io/publication/2019-icassp-hdslu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joint Spoken Language Understanding and Domain Adaptive Language Modeling</title>
+      <link>https://sz128.github.io/publication/2018-iscide-joint_slu_lm/</link>
+      <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2018-iscide-joint_slu_lm/</guid>
       <description></description>
     </item>
     
@@ -888,6 +936,14 @@ Adversarial training methods for semi-supervised text classification
     </item>
     
     <item>
+      <title>Rich Punctuations Prediction Using Large-scale Deep Learning</title>
+      <link>https://sz128.github.io/publication/2016-iscslp-wu_xueyang/</link>
+      <pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2016-iscslp-wu_xueyang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Paper Summary Seq2tree</title>
       <link>https://sz128.github.io/post/paper-summary-seq2tree/</link>
       <pubDate>Fri, 14 Oct 2016 00:00:00 +0000</pubDate>
@@ -1093,10 +1149,66 @@ $$ S_{Bi}(U,I) = \lambda \cdot S_P(U,I) + (1 − \lambda) \cdot S_G(U,I) $$&lt;/
     </item>
     
     <item>
+      <title>Hybrid Dialogue State Tracking for Real World Human-to-Human Dialogues</title>
+      <link>https://sz128.github.io/publication/2016-is-dstc4/</link>
+      <pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2016-is-dstc4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evolvable dialogue state tracking for statistical dialogue management</title>
+      <link>https://sz128.github.io/publication/2016-fcs-yu_kai/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2016-fcs-yu_kai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recurrent Polynomial Network for Dialogue State Tracking with Mismatched Semantic Parsers</title>
+      <link>https://sz128.github.io/publication/2015-sigdial-xie_qizhe/</link>
+      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2015-sigdial-xie_qizhe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Constrained Markov Bayesian Polynomial for Efficient Dialogue State Tracking</title>
+      <link>https://sz128.github.io/publication/2015-taslp-yu_kai/</link>
+      <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2015-taslp-yu_kai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The SJTU System for Dialog State Tracking Challenge 2</title>
+      <link>https://sz128.github.io/publication/2014-sigdial-sun_kai/</link>
+      <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2014-sigdial-sun_kai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Generalized Rule Based Tracker for Dialogue State Tracking</title>
+      <link>https://sz128.github.io/publication/2014-slt-sun_kai/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2014-slt-sun_kai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Semantic parser enhancement for dialogue domain extensions with little data</title>
       <link>https://sz128.github.io/publication/2014-slt-dstc3_slu/</link>
       <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
       <guid>https://sz128.github.io/publication/2014-slt-dstc3_slu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cognitive Technology in Task-oriented Dialogue Systems – Concepts, Advances and Future</title>
+      <link>https://sz128.github.io/publication/2014-cjc-yu_kai/</link>
+      <pubDate>Fri, 11 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2014-cjc-yu_kai/</guid>
       <description></description>
     </item>
     
