@@ -5,7 +5,7 @@
     <link>https://sz128.github.io/publication-type/8/</link>
       <atom:link href="https://sz128.github.io/publication-type/8/index.xml" rel="self" type="application/rss+xml" />
     <description>8</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>8</title>
@@ -13,18 +13,26 @@
     </image>
     
     <item>
-      <title>A Hierarchical Tracker For Multi-domain Dialogue State Tracking</title>
-      <link>https://sz128.github.io/publication/2020-icassp-hd_dst/</link>
-      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2020-icassp-hd_dst/</guid>
+      <title>Dual Learning for Semi Supervised Natural Language Understanding</title>
+      <link>https://sz128.github.io/publication/2020-dual-learning-for-semi-supervised-natural-language-understanding/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-dual-learning-for-semi-supervised-natural-language-understanding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Unsupervised Dual Paraphrasing for Two-stage Semantic Parsing</title>
       <link>https://sz128.github.io/publication/2020-acl-semantic_parsing/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>https://sz128.github.io/publication/2020-acl-semantic_parsing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Hierarchical Tracker For Multi-domain Dialogue State Tracking</title>
+      <link>https://sz128.github.io/publication/2020-icassp-hd_dst/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-icassp-hd_dst/</guid>
       <description></description>
     </item>
     
