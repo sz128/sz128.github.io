@@ -14,17 +14,25 @@
     
     <item>
       <title>Dual Learning for Semi Supervised Natural Language Understanding</title>
-      <link>https://sz128.github.io/publication/2020-dual-learning-for-semi-supervised-natural-language-understanding/</link>
+      <link>https://sz128.github.io/publication/2020-taslp-dual-nlu/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2020-dual-learning-for-semi-supervised-natural-language-understanding/</guid>
+      <guid>https://sz128.github.io/publication/2020-taslp-dual-nlu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jointly Encoding Word Confusion Network and Dialogue Context with BERT for Spoken Language Understanding</title>
-      <link>https://sz128.github.io/publication/2020-bert-wcn/</link>
+      <link>https://sz128.github.io/publication/2020-is-bert-wcn/</link>
       <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2020-bert-wcn/</guid>
+      <guid>https://sz128.github.io/publication/2020-is-bert-wcn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust Spoken Language Understanding with RL-based Value Error Recovery</title>
+      <link>https://sz128.github.io/publication/2020-nlpcc-robustslu/</link>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-nlpcc-robustslu/</guid>
       <description></description>
     </item>
     
