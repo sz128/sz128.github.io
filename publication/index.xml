@@ -5,12 +5,28 @@
     <link>https://sz128.github.io/publication/</link>
       <atom:link href="https://sz128.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 20 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
       <link>https://sz128.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Efficient Context and Schema Fusion Networks for Multi-Domain Dialogue State Tracking</title>
+      <link>https://sz128.github.io/publication/2020-tranformer-dst/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-tranformer-dst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vector Projection Network for Few-shot Slot Tagging in Natural Language Understanding</title>
+      <link>https://sz128.github.io/publication/2020-fewshotsluwithvpb/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2020-fewshotsluwithvpb/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Robust Spoken Language Understanding with RL-based Value Error Recovery</title>
@@ -65,14 +81,6 @@
       <link>https://sz128.github.io/publication/2020-icassp-hd_dst/</link>
       <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://sz128.github.io/publication/2020-icassp-hd_dst/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Efficient Context and Schema Fusion Networks for Multi-Domain Dialogue State Tracking</title>
-      <link>https://sz128.github.io/publication/2020-tranformer-dst/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://sz128.github.io/publication/2020-tranformer-dst/</guid>
       <description></description>
     </item>
     
