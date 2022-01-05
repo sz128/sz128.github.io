@@ -5,12 +5,20 @@
     <link>https://sz128.github.io/publication-type/8/</link>
       <atom:link href="https://sz128.github.io/publication-type/8/index.xml" rel="self" type="application/rss+xml" />
     <description>8</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 20 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 30 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://sz128.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>8</title>
       <link>https://sz128.github.io/publication-type/8/</link>
     </image>
+    
+    <item>
+      <title>Few-Shot NLU with Vector Projection Distance and Abstract Triangular CRF</title>
+      <link>https://sz128.github.io/publication/2021-nlpcc-fewshotnlu/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://sz128.github.io/publication/2021-nlpcc-fewshotnlu/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Efficient Context and Schema Fusion Networks for Multi-Domain Dialogue State Tracking</title>
